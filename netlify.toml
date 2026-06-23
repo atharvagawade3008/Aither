@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  # This rule ensures that React client-side routing works properly on Netlify
+  from = "/*"
+  to = "/index.html"
+  status = 200
